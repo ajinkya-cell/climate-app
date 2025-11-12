@@ -16,6 +16,8 @@ import { FavoriteCities } from "@/components/favorite-cites";
 import CurrentWeather from "@/components/current-weather";
 import HourlyTemperature from "@/components/hourly-temperature";
 import WeatherDetails from "@/components/weather-details";
+import WeatherTips from "@/components/weather-tips";
+import WeatherDosDonts from "@/components/weatherdosdonts";
 
 export function WeatherDashboard() {
   const {
@@ -128,6 +130,7 @@ export function WeatherDashboard() {
         <div className="grid gap-6 md:grid-cols-2 items-start">
           <WeatherDetails data={weatherQuery.data} />
           <WeatherForecast data={forecastQuery.data} />
+          <WeatherDosDonts data={weatherQuery.data}/>
         </div>
       </div>
     </div>
