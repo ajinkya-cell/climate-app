@@ -130,8 +130,9 @@ export function WeatherDashboard() {
         <div className="grid gap-6 md:grid-cols-2 items-start">
           <WeatherDetails data={weatherQuery.data} />
           <WeatherForecast data={forecastQuery.data} />
-          <WeatherDosDonts data={weatherQuery.data}/>
+          
         </div>
+        <WeatherDosDonts data={weatherQuery.data}/>
       </div>
     </div>
   );
